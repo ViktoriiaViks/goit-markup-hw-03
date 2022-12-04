@@ -7,7 +7,9 @@
   --address-color: #ffffff99;
   --team-back-color: #f5f4fa;
   --sub-text-color: #757575;
+  --border-color: #eee;
 }
+
 h1,
 h2,
 h3,
@@ -15,7 +17,11 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
+  margin: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
 }
 .page {
   font-family: Roboto, sans-serif;
@@ -23,6 +29,16 @@ p {
   background-color: var(--main-back-color);
   margin: 0;
   color: var(--main-text-color);
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.section {
+  padding: 94px 0;
+}
+.section-priority {
+  padding-bottom: 0;
 }
 .hero-title {
   font-size: 44px;
@@ -36,6 +52,7 @@ p {
   color: var(--main-back-color);
   background-color: var(--active-color);
   padding: 10px 32px;
+  margin-top: 30px;
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
@@ -55,6 +72,7 @@ p {
   border-radius: 4px;
   cursor: pointer;
   line-height: 1.6;
+  margin-right: 8px;
 }
 .filter-button:hover {
   background-color: var(--active-color);
@@ -63,15 +81,39 @@ p {
 .list {
   list-style: none;
 }
+.list-images {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.list-image {
+  margin: 0 30px 30px 0;
+  border: 1px solid var(--border-color);
+  box-sizing: border-box;
+  width: 370px;
+}
+.title-subtitle-block {
+  padding: 30px;
+}
+.list-priority {
+  display: flex;
+  justify-content: center;
+}
+.priority-item {
+  margin-right: 30px;
+}
 .text {
-  margin: 10px 0 0 0;
   color: var(--sub-text-color);
   line-height: 1.7;
+}
+.stuff-info {
+  padding: 30px;
 }
 .list-title {
   font-size: 14px;
   color: var(--text-color);
   line-height: 1.1;
+  margin-bottom: 10px;
 }
 .title {
   font-size: 36px;
@@ -83,11 +125,17 @@ p {
   background-color: var(--section-color);
   padding: 200px 0;
 }
+.business-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
 /* --- */
 .header {
   padding: 24px 0;
   background-color: var(--main-back-color);
+  border-bottom: 1px solid var(--border-color);
 }
 .nav {
   display: flex;
@@ -140,14 +188,12 @@ p {
   font-size: 16px;
   line-height: 1.1;
 }
-.service-block {
-  margin-bottom: 94px;
-}
 .stuff-card {
   background-color: var(--main-back-color);
+  margin-right: 30px;
 }
 .stuff-title {
-  margin: 30px 0 0 0;
+  margin-bottom: 10px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.1;
@@ -172,15 +218,22 @@ p {
   color: var(--main-back-color);
 }
 .good-title {
-  margin: 20px 0 0 0;
   font-size: 18px;
   line-height: 2;
 }
 .buttons {
   margin-top: 94px;
 }
+.buttons-content {
+  display: flex;
+  justify-content: center;
+}
 .goods {
-  margin: 34px 0 94px 0;
+  margin: 50px 0 94px 0;
+}
+.list-goods {
+  display: flex;
+  flex-wrap: wrap;
 }
 a {
   text-decoration: none;
