@@ -157,7 +157,7 @@ ul {
   font-weight: 700;
   text-decoration: none;
   margin-right: 93px;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
   line-height: 1.1;
 }
 .logo-1 {
@@ -168,6 +168,10 @@ ul {
 }
 .logo-3 {
   color: var(--main-back-color);
+}
+.header-logo {
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 /* --- */
 .links {
